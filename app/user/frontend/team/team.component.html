@@ -1,0 +1,14 @@
+<section class="selection-about" id="selection-about">
+  <div class="container-fluid">
+    <h1 class="text-center">ELECTROMINER TEAM</h1>
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6 text-center about-div" *ngFor="let member of team ">
+        <img alt="{{ member.memberName }}" title="{{ member.memberName }}" class="img-circle img-class" height="200" src="{{ member.memberImage }}" width="200">
+        <p>
+          <strong>{{ member.memberName }}</strong>
+        </p>
+        <p>{{ member.designation }}</p>
+      </div>
+    </div>
+  </div>
+</section>
